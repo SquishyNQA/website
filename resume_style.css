@@ -217,91 +217,39 @@ body{
     }
 }
 
-.container{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.hero{
+    background:  #000000;
+    padding: 150px 0;
+    max-height: 250px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-.contact-left{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-}
-.contact-left-title h2{
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 5px;
-}
-
-.contact-left-title hr{
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: #1c00b5;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.contact-inputs{
-    width: 400px;
-    height: 50px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    font-weight: 400;
-    color: #666;
-    border-radius: 50px;
-}
-
-.contact-left textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 25px;
-}
-
-.contact-inputs:focus{
-    border: 2px solid #666;
-}
-
-.contact-inputs::placeholder{
-    color: #a9a9a9;
-}
-
-.contact-left button{
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 1rem;
+.hero h1{
     color: #fff;
-    gap: 10px;
+    font-size: 60px;
+}
+.resume__button{
+    display: grid;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.resume__button button{
+    font-family: "Merriweather";
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1rem 4rem;
     border: none;
-    border-radius: 50px;
-    background:#1c00b5;
+    border-radius: 15px;
+    background: #242424;
+    color: #fff;
     cursor: pointer;
 }
 
-.contact-left button:hover{
+.resume__button button:hover {
     transform: scale(1.25);
     transition: ease-in-out 0.3s;
-}
-.contact-right{
-    width: 500px;
-    height: 500px;
-    background-color: #02000a;
-}
-.contact-right h1{
-    color: #fff;
-
-}
-@media (max-width: 800px) {
-    .contact-inputs{
-        width: 80vw;
-    }
-
-    .contact-right{
-        display: none;
-    }
+    background-color: #0056b3;
 }

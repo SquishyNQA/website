@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anh Nguyen's Engineering Portfolio</title>
         <link rel="stylesheet" href="mainstyle.css">
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+        crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation bar -->
@@ -18,16 +25,16 @@
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="#home" class="navbar__links" id="home-page">Home</a>
+                        <a href="index.html" class="navbar__links" id="home-page">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#resume" class="navbar__links" id="resume-page">Resume</a>
+                        <a href="resume.html" class="navbar__links" id="resume-page">Resume</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                        <a href="projects.html" class="navbar__links" id="projects-page">Projects</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#services" class="navbar__links" id="services-page">About Me</a>
+                        <a href="About_me.html" class="navbar__links" id="About Me-page">About Me</a>
                     </li>
                     <li class="navbar__btn">
                         <!-- this is probably a button that would be referenced later -->
@@ -49,7 +56,10 @@
             </div>
         </div>
         <!-- The box -->
-        <div class="box" id = "introduction"> Introduction</div>
+        <div class="box" id = "introduction"> 
+            <p><span class="content">Introduction</span></p>
+
+        </div>
         <!-- About Section -->
         <div class="main" id="about">
             <div class="main__container">
@@ -61,13 +71,20 @@
                 <div class="education">
                     <p>I am currently a class 2027 Freshman studying Mechanincal Engineering with a concentration in Manufacturing and also a minor in Data Science at Michigan State University.</p>
                 </div>
+                <img src="group_picture.jpg" alt="500" class="fun_picture">
+                <div class="more">
+                    <p>If you want to know more, check out the <a href="#About Me">About Me</a> section</p>
+                </div>
             </div>    
         </div>
         <!-- Experience -->
-        <div class="box" id = "Experience"> Experience</div>
+        <div class="box" id = "Experience"> 
+            <p><span class="content">Experience</span></p>
+        </div>
         <!-- The experience -->
         <a href="#Experience" class="experience-link">
-            <div class="experience-section"> 
+            <div class="experience-section">
+                <div class="nothing"></div> 
                 <div class="year">Aug 2023 - Now</div>
                 <div class="description">
                     <h1 class="heading">MSU Solar Car Racing</h1>
@@ -86,7 +103,8 @@
             </div>
         </a>
         <a href="#Experience" class="experience-link">
-            <div class="experience-section"> 
+            <div class="experience-section">
+                <div class="nothing"></div> 
                 <div class="year">Aug 2023 - Now</div>
                 <div class="description">
                     <h1 class="heading">MSU - College of Engineering</h1>
@@ -106,6 +124,7 @@
         </a>
         <a href="#Experience" class="experience-link">
             <div class="experience-section"> 
+                <div class="nothing"></div>
                 <div class="year">Aug 2021 - Dec 2022</div>
                 <div class="description">
                     <h1 class="heading">ATEC - Accessible Technology Engineering Club</h1>
@@ -129,30 +148,74 @@
                 </div>   
             </div>
         </a>
-        <!-- Services Section -->
-        <div class="box" id = "Experience"> Projects</div>
+        <!-- Projects Section -->
+        <div class="box" id = "Projects"> 
+            <p><span class="content">Projects</span></p>
+        </div>
         <div class="services" id="services">
             <div class="services__wrapper">
-                <div class="services__card">
-                    <img src="image1.jpg" alt="Service Image 1">
-                    <h1>Smart desklamp</h1>
-                    <div class="description">Description for Service 1adihgoiashdoighoisahdogihsoidhgosaoidhgoisahoidghsoidhgoisahdoghsaoidhgoisaihgosahdgosiahdgoasdhgoisiahdgoasdhgoiashdgosaidihgasoidhgasoidghasodighaso</div>
-                </div>
+                <a href="#Experience" class="experience-link">
+                    <div class="services__card">
+                        <img src="image1.jpg" alt="Service Image 1">
+                        <h1>Smart desklamp</h1>
+                        <div class="description">Description for Service 
+                        </div>
+                    </div>
+                </a>    
                 <div class="services__card">
                     <img src="image2.jpg" alt="Service Image 2">
                     <h1>Custom Handheld Emulator</h1>
+                    <div class="description">Description for Service 
+                    </div>
                 </div>
                 <div class="services__card">
                     <img src="image2.jpg" alt="Service Image 3">
                     <h1>To be seen</h1>
+                    <div class="description">Description for Service 
+                    </div>
                 </div>
                 <div class="services__card">
                     <img src="image2.jpg" alt="Service Image 4">
                     <h1>To be seen</h1>
+                    <div class="description">Description for Service 
+                    </div>
                 </div>
             </div>
           </div>
         
+        <!-- Copyright and other button -->
+        <div class="box" id = "Contact"> 
+            <p><span class="content">Contact</span></p>
+        </div>
+        <div class="contact">
+            <div class="footer__container">
+                <div class="email">
+                    <h2>The best way to contact me is via Email:</h2>
+                    <h1>nguyenquanganh26122005@gmail.com</h1>
+                </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/profile.php?id=100012190625123" class="social__icon--link" target="_blank"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
+                        <a href="https://www.instagram.com/tomnguyen_2612/" class="social__icon--link"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/in/quang-anh-nguyen-342a56273/" class="social__icon--link"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a href="https://github.com/SquishyNQA" class="social__icon--link"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+            </div>
+            <div class="thankyou">Thank you for visiting my website!</div>
+        </div>
+        <!-- Cool effect -->
+        <div class="cursor"></div>
         <script src="app.js"></script>
     </body>
 </html>

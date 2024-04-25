@@ -53,3 +53,28 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu)
 navLogo.addEventListener('click', hideMobileMenu)
+
+
+const hero = document.querySelector('.hero');
+let ring;
+
+hero.addEventListener('mousemove', function(e) {
+  const x = e.clientX - hero.offsetLeft;
+  const y = e.clientY - hero.offsetTop;
+  
+  if (!ring) {
+    ring = document.createElement('div');
+    ring.classList.add('gradient-ring');
+    hero.appendChild(ring);
+  }
+  
+  ring.style.left = x + 'px';
+  ring.style.top = y + 'px';
+});
+
+hero.addEventListener('mouseleave', function() {
+  if (ring) {
+    ring.remove();
+    ring = null;
+  }
+});
