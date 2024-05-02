@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Project_style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Anh Nguyen</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="resume.html" class="navbar__links" id="resume-page">Resume</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__links" id="projects-page">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="About_me.html" class="navbar__links" id="services-page">About Me</a>
+                </li>
+                <li class="navbar__btn">
+                    <!-- this is probably a button that would be referenced later -->
+                    <a href="contact.html" class="button" id="signup">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Header -->
+
+    <div class="hero" id="home">
+        <h1>Projects</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="box" id = "SmartStudyLamp"> 
+        <h1><span class="content">Smart Study Lamp</span></ph1>
+        <p class="description">I was in my dorm room when I saw that I was having a really hard time pressing the on and off button of my desklamp. I really like my desklamp and I thought is there a way I can automate the on/off switch of the lamp so that I don't have to care about it and also give me some useful data of my study time to help my better at my academic.</p>
+        <div class="video-containter">
+            <video controls >
+                <source src="smart light demo.mp4" type="video/mp4"> Your browser does not suppor this video tag
+            </video>
+        </div>
+
+        <div class="howitwork">
+            <div class="left-side">
+                <img src="smart light design.png" alt="Image Missing">
+                <div class="image_description">The CAD desgin for the lamp</div>
+            </div>
+            <div class="right-side">
+                <img src="smart lamp finished.jpg" alt="Image Missing">
+                <h1>How it work:</h1> 
+                <p>It work by connecting an arduino to a LED lightbulb through a 5V relay. Using a face recognition program that I create, the lamp can automatically turn on and off by noticing whether I am  studying or not. 
+                The code also extract data to show how long is a user's study session.</p>
+                <p><a href="https://github.com/SquishyNQA/Smart-Desklamp.git">Python code</a> for the project</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id = "HandheldEmulator"> 
+        <h1><span class="content">Handheld Gamimg Emulator</span></h1>
+        <p class="image_description">Work in progress</p>
+    </div>
+    <!-- Footer -->
+    <div class="contact">
+        <div class="footer__container">
+            <div class="email">
+                <h2>The best way to contact me is via Email:</h2>
+                <h1>nguyenquanganh26122005@gmail.com</h1>
+            </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/profile.php?id=100012190625123" class="social__icon--link" target="_blank"
+                        ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="https://www.instagram.com/tomnguyen_2612/" class="social__icon--link"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/quang-anh-nguyen-342a56273/" class="social__icon--link"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="https://github.com/SquishyNQA" class="social__icon--link"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                </div>
+            </div>
+        </section>
+        </div>
+        <div class="thankyou">Thank you for visiting my website!</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
