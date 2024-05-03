@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #131313;
+    background-color: #55ffe5;
     font-size: 14px;
     font-family: 'Merriweather', sans-serif;
 }
@@ -226,87 +226,151 @@ body{
     align-content: center;
 }
 
+
 .hero h1{
     color: #fff;
     font-size: 60px;
 }
-.resume__button{
-    display: grid;
-    justify-content: center;
-    padding: 3rem;
-}
 
-.resume__button button{
-    font-family: "Merriweather";
-    font-size: 20px;
-    font-weight: 600;
-    padding: 1rem 4rem;
-    border: none;
-    border-radius: 15px;
-    background: #1e4599;
-    color: #fff;
-    cursor: pointer;
-}
-
-.resume__button button:hover {
-    transform: scale(1.25);
-    transition: ease-in-out 0.3s;
-    background-color: #177ec2;
-}
-
-@media screen and (max-width: 480px) {
-  .resume__button button{
-    font-size: 16px;
-    padding: 1rem 3rem;
-}
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Set the height of the container to match the PDF height */
-}
-.pdf__container{
-  position: relative;  
-}
-.update{
-  text-align: right;
-  color:#fff;
-  font-style: italic;
-  font-size: 16px;
-  padding-bottom: 0.75rem;
-}
-.pdf {
-  display: block;
-  margin: auto; 
-  margin-bottom: 5rem;
-  width: 1000px;
-  height: 1300px
-}
-@media screen and (max-width: 1100px) {
-  .pdf{
-    width: 750px;
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .pdf{
-    width: 550px;
-    height: 700px;
-  }
-}
 .contact{
     background-color: #1b1717ef;
 }
-  .footer__container {
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
+.box{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  background-color: #131313;
+  box-sizing: border-box;
+}
+#Hobbies{
+  background-color: #1b1717ef;
+}
+.content{
+  display: inline-block;
+  margin-left: 15%;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none; /* Remove default underline */
+  border-bottom: 2px solid blue; /* Add custom underline */
+  border-radius: 5px;
+  padding-bottom: 5px;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-folor: transparent;
+}
+/* Introduction */
+.introduction-container{
+  background-color: #131313;
+}
+.introduction{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  /* padding-top: 1.5rem; */
+  max-width: 60%;
+  margin: 0 20%;
+  background-color: #131313;
+}
 
+.introduction-paragraph {
+  font-size: 20px;
+  color: #fff;/* This will make the paragraph take up all available space */
+  width: 100%;
+}
+
+.introduction-paragraph p{
+  padding-bottom: 1.5rem;
+  text-align: justify;
+}
+.introduction-img {
+  width: auto;
+  height: 100%;
+  /* max-height: 20vh; */
+}
+
+.introduction-img img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.Hobbies{
+  background-color: #1b1717ef;
+}
+
+.bullet-points {
+    margin: 0 20%; /* Add left padding for bullet points */
+    color: #fff;
+}
+
+.bullet-points li {
+    list-style-type: disc; /* Use disc bullet points */ /* Color of the bullet points */
+    font-size: 20px;
+    padding-bottom: 1.5rem; /* Size of the bullet points */
+}
+
+/* Pictures */
+.pictures{
+  background-color: #131313;
+  justify-content: center;
+}
+.longpicture{
+  width: 60%;
+  height: auto;
+  margin: 0 20%;
+  aspect-ratio: 21/9;
+  padding-bottom: 1rem;
+  justify-content: center;
+  
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 20%;
+  
+}
+
+.grid img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 3/2;
+  padding-bottom: 1rem;
+}
+
+.portrait{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 20%;
+  
+}
+
+.portrait img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 9/16;
+  padding-bottom: 1rem;
+}
+.footer__container {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   .email h1, h2{
     color: #fff;
     text-align: center;

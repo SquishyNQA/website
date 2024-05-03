@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #55ffe5;
+    background-color: #131313;
     font-size: 14px;
     font-family: 'Merriweather', sans-serif;
 }
@@ -217,11 +217,27 @@ body{
     }
 }
 
+.hero{
+    background:  #000000;
+    padding: 150px 0;
+    max-height: 250px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 60px;
+}
+
 .container{
     height: 100vh;
+    margin-top: 5rem;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: top;
+    justify-content: center;
+    gap: 100px;
 }
 
 .contact-left{
@@ -234,6 +250,7 @@ body{
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .contact-left-title hr{
@@ -263,11 +280,11 @@ body{
 }
 
 .contact-inputs:focus{
-    border: 2px solid #666;
+    border: 2px solid #3852e7;
 }
 
 .contact-inputs::placeholder{
-    color: #a9a9a9;
+    color: #575757;
 }
 
 .contact-left button{
@@ -288,12 +305,22 @@ body{
     transition: ease-in-out 0.3s;
 }
 .contact-right{
-    width: 500px;
-    height: 500px;
-    background-color: #02000a;
+    position: relative;
+    width: 300px; /* Adjust grid width as needed */
+    height: 300px; /* Adjust grid height as needed */
+    background-color: #000000; /* Set background color to white */
+    border: 1px solid #ffffff; 
 }
 .contact-right h1{
     color: #fff;
+
+.circle {
+    width: 20px; /* Adjust circle size as needed */
+    height: 20px; /* Adjust circle size as needed */
+    background-color: #007bff; /* Circle color */
+    border-radius: 50%; /* Create a circle shape */
+    position: absolute;
+}
 
 }
 @media (max-width: 800px) {
