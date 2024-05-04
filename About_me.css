@@ -243,6 +243,17 @@ body{
   background-color: #131313;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px){
+  .box{
+      padding: 1.5rem 0;
+  }
+
+  .content{
+      font-size: 1.75rem;
+  }
+}
+
 #Hobbies{
   background-color: #1b1717ef;
 }
@@ -280,14 +291,19 @@ body{
 }
 
 .introduction-paragraph {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #fff;/* This will make the paragraph take up all available space */
   width: 100%;
 }
 
+.introduction-paragraph a{
+  color: #fff;
+  font-weight: 700;
+}
 .introduction-paragraph p{
   padding-bottom: 1.5rem;
   text-align: justify;
+  line-height: 1.5;
 }
 .introduction-img {
   width: auto;
@@ -301,6 +317,24 @@ body{
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1100px) {
+  .introduction{
+    grid-template-columns: 1fr;
+  }
+
+  .introduction-img {
+    order: -1; /* Move the image to the top */
+}
+
+.introduction-paragraph {
+  font-size: 1.25rem;
+  color: #fff;/* This will make the paragraph take up all available space */
+  width: 100%;
+}
+  /* Somehow get the picture on top and not on the bottom like default */
+}
+
+/* Hobbies */
 .Hobbies{
   background-color: #1b1717ef;
 }
@@ -312,10 +346,20 @@ body{
 
 .bullet-points li {
     list-style-type: disc; /* Use disc bullet points */ /* Color of the bullet points */
-    font-size: 20px;
-    padding-bottom: 1.5rem; /* Size of the bullet points */
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5; /* Size of the bullet points */
 }
 
+
+@media screen and (max-width: 1100px) {
+  .bullet-points li {
+    list-style-type: disc; /* Use disc bullet points */ /* Color of the bullet points */
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5; /* Size of the bullet points */
+}
+}
 /* Pictures */
 .pictures{
   background-color: #131313;
