@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link rel="stylesheet" href="About_me.css">
-    
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,20 +25,23 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
                     <a href="resume.html" class="navbar__links" id="resume-page">Resume</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="projects.html" class="navbar__links" id="projects-page">Projects</a>
+                    <a href="projects.html" class="navbar__links" id="projects-page">Projects <span class="triangle">&#x25BE</span></a>
+                    <ul class="dropdown">
+                        <li><a href="projects.html#SmartStudyLamp">Smart Desklamp</a></li>
+                        <li><a href="projects.html#HandheldEmulator">Handheld Emulator</a></li>
+                        <li><a href="#">TBD</a></li>
+                        <li><a href="#">TBD</a></li>
+                    </ul>
                 </li>
                 <li class="navbar__item">
-                    <a href="About_me.html" class="navbar__links" id="services-page">About Me</a>
+                    <a href="About_me.html" class="navbar__links" id="About Me-page">About Me</a>
                 </li>
                 <li class="navbar__btn">
                     <!-- this is probably a button that would be referenced later -->
-                    <a href="contact.html" class="button" id="signup">Contact</a>
+                    <a href="contact.html" class="button" id="signup"><strong>Contact</strong></a>
                 </li>
             </ul>
         </div>
@@ -58,7 +66,7 @@
                 <p>I am a forever learner, always trying to improve my skills and meet new people whether is it in a classroom or a team. My interest lie in create and implement mechanical design for automating consumer electronic</p>
 
                 <p>I encourage you to take a look through this online <a href="resume.html">CV</a>, which details my projects and experience. Feel free to get in contact with me if you have any questions or comments.</p>
-                <p>Sincrely,</p>
+                <p>Sincerely,</p>
                 <p>Anh Nguyen</p>
             </div> 
             <div class="introduction-img">
@@ -104,7 +112,16 @@
         <div class="footer__container">
             <div class="email">
                 <h2>The best way to contact me is via Email:</h2>
-                <h1>nguyenquanganh26122005@gmail.com</h1>
+                <script type="text/javascript">
+                    document.write('<a id="emailLink" href="mailto:&#110;&#103;&#117;&#121;&#101;&#110;&#113;&#117;&#97;&#110;&#103;&#97;&#110;&#104;&#50;&#54;&#49;&#50;&#50;&#48;&#48;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" rel="nofollow noopener noreferrer">&#110;&#103;&#117;&#121;&#101;&#110;&#113;&#117;&#97;&#110;&#103;&#97;&#110;&#104;&#50;&#54;&#49;&#50;&#50;&#48;&#48;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>');
+
+                    // // Apply styles to the email link
+                    // const emailLink = document.getElementById('emailLink');
+                    // emailLink.style.color = '#fff'; // Change link color to blue
+                    // emailLink.style.textDecoration = 'none'; // Remove underline
+                    // emailLink.style.fontWeight = 'bold'; // Make the link bold
+                    // // You can add more styles as needed
+                </script>
             </div>
         <section class="social__media">
             <div class="social__media--wrap">
@@ -126,6 +143,7 @@
         </section>
         </div>
         <div class="thankyou">Thank you for visiting my website!</div>
+    </div>
     </div>
     <script src="app.js"></script>
 </body>

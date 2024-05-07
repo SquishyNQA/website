@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
 }
 body{
+    background-color: #12131a;
     min-width: 50%;
     min-height: 50%;
 }
@@ -29,7 +30,7 @@ body{
     background: #414141;
   } 
 .navbar{
-    background: #131313;
+    background: #12131a;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -52,8 +53,9 @@ body{
 }
 
 #navbar__logo{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -64,6 +66,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .navbar__menu{
@@ -105,13 +108,15 @@ body{
     height: 100%;
     width: 100%;
     border: none;
-    outline: #ffb199;
+    /* outline: #ffb199; */
     border-radius: 4px;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.5), -2px -2px 4px rgba(255,255,255,0.5);
 }
 .button:after {
     position: absolute;
@@ -120,7 +125,7 @@ body{
     left: 0;
     width:0;
     height: 100%;
-    background: #36dc97;
+    background: #42e4a0;
     transition: all 0.35s;
     border-radius: 4px;
 
@@ -141,6 +146,48 @@ body{
     transition: all 0.3s ease;
 }
 
+/* Dropdown */
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+}
+
+ul li ul.dropdown li{
+    display: block;
+
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background: #12131a;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+}
+
+ul li ul.dropdown a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+}
+
+ul li ul.dropdown a:hover{
+    color:#18bbfc;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
 @media screen and (max-width: 960px) {
     .navbar__container{
         display: flex;
@@ -166,7 +213,7 @@ body{
     }
 
     .navbar__menu.active{
-        background: #131313;
+        background: #12131a;
         top: 100%;
         opacity: 1;
         transform: all 0.5s ease;
@@ -235,6 +282,12 @@ body{
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    .triangle{
+        display: none;
+    }
+    ul li:hover ul.dropdown{
+        display: none;
+    }
 }
 
 /* Hero Section */
@@ -261,7 +314,7 @@ body{
     top: var(--y); /* Position from top based on mouse movement */
     width: var(--size); /* Width of the pseudo-element */
     height: var(--size); /* Height of the pseudo-element */
-    background: radial-gradient(circle closest-side, rgb(0, 217, 255), transparent); /* Gradient background */
+    background: radial-gradient(circle closest-side, #66FCF1, transparent); /* Gradient background */
     transform: translate(-50%, -50%); /* Translate the pseudo-element */
     transition: width 0.2s ease, height 0.2s ease; /* Transition effect for width and height */
     
@@ -293,7 +346,7 @@ body{
 }
 .divider{
     width: 4px; /* Width of the vertical line */
-    background-color: #42A6DE;
+    background-color: #66FCF1;
     z-index: 100;
 }
 .hero__overview{
@@ -311,9 +364,10 @@ body{
 }
 
 .hero__heading h1{
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -324,9 +378,10 @@ body{
 .hero__description {
     font-size: 3rem;
     font-weight: 700 ;
-    background: #6236dc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #30329c, #6236dc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #446dc7, #6236dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -336,9 +391,10 @@ body{
 .main__btn{
     font-size: 1.8rem;
     max-width: 200px;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 2px 2px 4px rgba(110, 110, 110, 0.5), -2px -2px 4px rgba(255,255,255,0.5);
     padding: 30px;
     border: none;
     border-radius: 4px;
@@ -352,6 +408,7 @@ body{
 .main__btn a {
     color: #fff;
     text-decoration: none;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 768px){
@@ -397,9 +454,6 @@ body{
         align-self: center;
         font-size: 1.25rem;
         max-width: 300px;
-        background: #36D1DC;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         padding: 20px;
         border: none;
         border-radius: 4px;
@@ -415,11 +469,11 @@ body{
     display: flex;
     flex-direction: column;
     padding: 3rem 0;
-    background-color: #131313;
+    background-color: #12131a;
     box-sizing: border-box;
 }
 #Experience, #Contact{
-    background-color: #1b1717ef;
+    background-color: #1F2833;
 }
 
 .content{
@@ -429,12 +483,13 @@ body{
     font-size: 2.25rem;
     font-weight: 600;
     text-decoration: none; /* Remove default underline */
-    border-bottom: 2px solid blue; /* Add custom underline */
+    border-bottom: 2px solid #45A29E; /* Add custom underline */
     border-radius: 5px;
     padding-bottom: 5px;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -453,7 +508,7 @@ body{
 
 /* About Section */
 .main{
-    background-color: #131313;
+    background-color: #12131a;
     justify-content: center;
     align-content: center;
 
@@ -479,14 +534,14 @@ body{
     height: auto;
     border-radius: 15px;
     width: 50%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(160, 255, 239, 0.5);
 }
 .main__content, .education, .more{
     
     color: #fff;
     display: flex;
     /* justify-content: center; Center the content horizontally */
-    padding: 20px 20%;
+    padding: 0 20%;
 
 }
 
@@ -494,7 +549,8 @@ body{
     text-align: justify;
     font-size: 1.25rem;
     font-weight: 100;
-    padding-bottom: 1.5rem;
+    padding: 1.25rem 0;
+    line-height: 1.5;
 }
 
 .more a{
@@ -511,7 +567,7 @@ body{
     left: 0;
     width:0;
     height: 100%;
-    background: #36dc97;
+    background: #5de7d0;
     transition: all 0.35s;
     border-radius: 4px;
 
@@ -525,32 +581,6 @@ body{
     width:100%;
 }
 
-.main__img--container{
-    text-align: center;
-}
-
-.main__img--card{
-    margin: 10px;
-    height: 500px;
-    width: 500px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-}
-
-.fa-layer-group,
-.fa-users {
-    font-size: 14rem;
-}
-
-#card-2{
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
@@ -606,7 +636,7 @@ body{
 .line_class {
     display: flex; /* Add display: flex to use alignment properties */
     justify-content: center; /* Horizontally center the line within its container */
-    background-color: #1b1717ef;
+    background-color: #1F2833;
      /* Set the width of the container */
     margin: 0 auto; /* Center the container horizontally */
 }
@@ -614,7 +644,7 @@ body{
 .line {
     width: 70%; /* Set the width of the line to 100% of its container */
     height: 5px; /* Height of the line */
-    background-color: #42A6DE;
+    background-color: #66FCF1;
     z-index: 10;
     border-radius: 5px;
 }
@@ -628,7 +658,7 @@ body{
     grid-template-columns: 20% 20% 1fr; /* Create a grid with flexible columns */
     padding: 2rem 0;
     height: 100%;
-    background-color: #1b1717ef;
+    background-color: #1F2833;
   }
 /* .experience-section:hover {
     background-color: rgba(61, 89, 165, 0.685);
@@ -672,6 +702,7 @@ body{
     height: auto; /* Maintain the aspect ratio of the image */
     display: block; /* Ensure the image is displayed as a block element */
     align-content: left; 
+    border-radius: 15px;
 }
 .skill__description{
     font-size: 1.25rem;
@@ -681,7 +712,7 @@ body{
     display: flex;
     flex-wrap: wrap; 
     flex-direction: row;
-    padding: 10px 0;
+    padding-top: 10px ;
 
 }
 
@@ -689,14 +720,15 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    background-color: rgba(240,250,240, 0.1);
+    background-color: #45a29d41;
     border-radius: 20px;
 
 }
 
 .bean__box p {
     margin: 0 ;
-    color: #fff;
+    color: #93e0b3;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1100px) {
@@ -714,9 +746,8 @@ body{
     .experience-section {
         display: flex;
         flex-direction: column;/* Create a grid with flexible columns */
-        padding-top: 1rem;
+        padding: 1rem 0;
         height: 100%;
-        background-color: #1b1717ef;
     }
 
     .description {
@@ -743,7 +774,7 @@ body{
 
 /* Project Section */
 .services {
-    background: #131313;
+    background: #12131a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -775,7 +806,7 @@ body{
         bottom: 0%; /* Initially hide the description window */
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+        background-color: #0b0c10c4; /* Semi-transparent background */
         color: #fff;
         padding: 10px;
         opacity: 0;
@@ -821,13 +852,13 @@ body{
     }
   
   
-  .services__btn {
+  /* .services__btn {
     display: flex;
     justify-content: center;
     margin-top: 16px;
   }
-  
-  .services__card button {
+   */
+  /* .services__card button {
     color: #fff;
     padding: 14px 24px;
     border: none;
@@ -839,7 +870,7 @@ body{
   
   .services__card button:hover {
     cursor: pointer;
-  }
+  } */
   
   @media screen and (max-width: 1300px) {
     .services__wrapper {
@@ -855,7 +886,7 @@ body{
 
   /*Contact  */
 .contact{
-    background-color: #1b1717ef;
+    background-color: #1F2833;
 }
   .footer__container {
     padding: 1rem 0;
@@ -943,9 +974,9 @@ body{
     }
  }
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 480px) {
     #emailLink{
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
     .email h2{

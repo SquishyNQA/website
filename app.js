@@ -63,3 +63,4 @@ overview.addEventListener('mousemove', e => {
   overview.style.setProperty('--x', x + 'px');
   overview.style.setProperty('--y', y + 'px');
 });
+
