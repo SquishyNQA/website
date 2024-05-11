@@ -115,6 +115,8 @@ body{
   background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
+  cursor: pointer;
+  position: relative;
   transition: all 0.3s ease;
   text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.5), -2px -2px 4px rgba(255,255,255,0.5);
 }
@@ -257,6 +259,9 @@ ul li:hover ul.dropdown{
         height: 50px;
         margin: 0;
     }
+    .button:after {
+      display: none;
+  }
 
     #mobile-menu{
         position: absolute;
