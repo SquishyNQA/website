@@ -115,6 +115,8 @@ body{
     background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
+    cursor: pointer;
+    position: relative;
     transition: all 0.3s ease;
     text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.5), -2px -2px 4px rgba(255,255,255,0.5);
 }
@@ -257,6 +259,9 @@ ul li:hover ul.dropdown{
         margin: 0;
     }
     
+    .button:after {
+        display: none;
+    }
 
     #mobile-menu{
         position: absolute;
@@ -388,28 +393,6 @@ ul li:hover ul.dropdown{
     -moz-text-fill-color: transparent;
 }
 
-.main__btn{
-    font-size: 1.8rem;
-    max-width: 200px;
-    background: #1FA2FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-shadow: 2px 2px 4px rgba(110, 110, 110, 0.5), -2px -2px 4px rgba(255,255,255,0.5);
-    padding: 30px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-}
-
-.main__btn a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
 
 @media screen and (max-width: 768px){
     .hero{
@@ -556,7 +539,29 @@ ul li:hover ul.dropdown{
 .more a{
     font-weight: 700;
     color:#fff;
+}
+
+.main__btn{
+    font-size: 1.8rem;
+    max-width: 200px;
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: 2px 2px 4px rgba(110, 110, 110, 0.5), -2px -2px 4px rgba(255,255,255,0.5);
+    padding: 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a {
+    color: #fff;
     text-decoration: none;
+    font-weight: 700;
 }
 
 
@@ -706,7 +711,9 @@ ul li:hover ul.dropdown{
 }
 .skill__description{
     font-size: 1.25rem;
-    padding-top: 1rem
+    padding-top: 1rem;
+    text-align: justify;
+    line-height: 1.5;
 }
 .skills{
     display: flex;
